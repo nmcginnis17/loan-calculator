@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Loan Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <div class="sinnig-calculator-div">
+      <form class="sinnig-calculator-form" action="index.html" method="post">
+
+        <!-- Amount label and input field -->
+        <label for="amount">Amount</label>
+        <input required type="number" name="amount" value="">
+
+        <!-- Term length label and input field -->
+        <label for="Length">Loan Term in Months</label>
+        <input required type="number" name="length" value="">
+
+        <!-- Down payment label and input field -->
+        <label for="down-payment">Down Payment</label>
+        <input required type="number" name="down-payment" value="">
+
+        <!-- Interest label and input field -->
+        <label for="interest">Interest Rate %</label>
+        <input required id="sinnig-calculator-form-interest" type="number" name="interest" value="">
+
+        <!-- Payment label -->
+        <label for="monthly-payment-label">Monthly Payment: </label>
+
+        <!-- Total dispayed -->
+        <label for="total" id="total">$0.00</label>
+
+        <!-- Button to perform calculations -->
+        <button onclick="totalDisplay()" type="button" name="button">Calculate</button>
+      </form>
+      <!-- Disclamer Text -->
+      <p id="disclaimer">*Monthly payment is an estimate. Contact loan provider for exact payment amount.</p>
+    </div>
+
+    <script src="script.js" charset="utf-8"></script>
+
+  </body>
+</html>
